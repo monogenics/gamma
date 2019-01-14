@@ -53,8 +53,9 @@ class OptimalGeometry:
 
 
 def main():
-    notch_count=10
-    og = OptimalGeometry(notch_count=notch_count, init_len=16,max_iter=100)
+    notch_count=12
+    max_iter = 2000
+    og = OptimalGeometry(notch_count=notch_count, init_len=256,max_iter=max_iter)
     print(og.notch_bounds())
     lengths = og.init_len_list
 
